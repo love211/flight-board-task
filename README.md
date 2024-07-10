@@ -31,6 +31,23 @@ To run this project locally, follow these steps:
     npm start
     ```
 
+# Real-Time Flight Status Board
+
+This is a React-based application that mimics a real-time flight status board. It retrieves flight details from a provided API, updates the data at regular intervals, and allows users to view more detailed information about a specific flight.
+
+## Features
+
+1. **Flight Table:**
+   - Fetch and display a list of flights in a table with columns for Flight Number, Airline, Origin, Destination, Departure Time, and Status.
+   - Every 30 seconds, fetch fresh data from the API to update the displayed flight statuses.
+
+2. **Detail View:**
+   - Clicking on a row (or a link within a row) navigates the user to a detailed view of that flight.
+   - In the detailed view, fetch and display comprehensive data for the selected flight.
+
+3. **Navigation:**
+   - Use React Router to handle navigation between the main flight    
+
 ## Usage
 Once the application is running, you can access it in your web browser at `http://localhost:3000`. The flight board will display the current flight information and update in real-time.
 
